@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Petname:</strong>
+  <%= @customer.petName %>
+</p>
+
+<p>
+  <strong>Appointment remainder:</strong>
+  <%= @customer.appointment_remainder %>
+</p>
+
+<p>
+  <strong>Visitpurpose:</strong>
+  <%= @customer.visitPurpose %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
